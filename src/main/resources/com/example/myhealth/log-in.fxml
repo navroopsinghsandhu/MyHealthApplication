@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.myhealth.controller.LoginUserController">
+   <children>
+      <AnchorPane prefHeight="800.0" prefWidth="365.0" style="-fx-background-color: #FED700;">
+         <children>
+            <Label layoutX="40.0" layoutY="255.0" text="A place for your health record" />
+            <Label layoutX="42.0" layoutY="192.0" text="My Health Application">
+               <font>
+                  <Font name="Arial Narrow Bold Italic" size="18.0" />
+               </font></Label>
+         </children></AnchorPane>
+      <AnchorPane prefHeight="800.0" prefWidth="812.0" style="-fx-background-color: white;">
+         <children>
+            <ImageView fitHeight="107.0" fitWidth="114.0" layoutX="296.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@doctor-logo.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="230.0" layoutY="168.0" text="Username">
+               <font>
+                  <Font name="Arial Black" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="231.0" layoutY="234.0" text="Password">
+               <font>
+                  <Font name="Arial Black" size="13.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tf_username" layoutX="349.0" layoutY="161.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <Button fx:id="button_log_in" layoutX="287.0" layoutY="303.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="160.0" style="-fx-background-color: #FED700;" text="Login" />
+            <Label layoutX="296.0" layoutY="358.0" text="Not a user?">
+               <font>
+                  <Font name="Arial Black" size="13.0" />
+               </font>
+            </Label>
+            <Button fx:id="button_signup" layoutX="378.0" layoutY="355.0" mnemonicParsing="false" style="-fx-background-color: white;" text="Sign up!" textFill="#0e239e">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="13.0" />
+               </font></Button>
+            <PasswordField fx:id="pf_password" layoutX="349.0" layoutY="226.0" prefHeight="35.0" prefWidth="221.0" />
+         </children></AnchorPane>
+   </children>
+</HBox>

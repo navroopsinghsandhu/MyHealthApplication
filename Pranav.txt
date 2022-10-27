@@ -1,0 +1,2 @@
+Id | Weight | Temperature | Blood Pressure | Note
+10 | 32 | 32 | 32 | 32

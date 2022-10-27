@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="650.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.myhealth.controller.AboutController">
+   <children>
+      <Label layoutX="422.0" layoutY="51.0" text="Our Mission">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="18.0" />
+         </font></Label>
+      <Label layoutX="422.0" layoutY="531.0" text="My Health V1.0" />
+      <Label layoutX="342.0" layoutY="127.0" text="Help everyone keep track of their health by storing records" />
+      <Button fx:id="button_back" layoutX="443.0" layoutY="214.0" mnemonicParsing="false" style="-fx-background-color: #FED700;" text="Go back" />
+   </children>
+</AnchorPane>

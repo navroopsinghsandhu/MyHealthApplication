@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="650.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.myhealth.controller.HandleRecordsController">
+   <children>
+      <Label layoutX="345.0" layoutY="148.0" text="Add, update or delete your records here!">
+         <font>
+            <Font name="Arial Black" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="421.0" layoutY="65.0" text="Health Records">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="button_new_record" layoutX="414.0" layoutY="207.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="173.0" style="-fx-background-color: #FED700;" text="Click to add a new record" />
+      <Button fx:id="button_go_back" layoutX="420.0" layoutY="346.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="173.0" style="-fx-background-color: #FED700;" text="Go back" />
+      <Button fx:id="button_update_record" layoutX="380.0" layoutY="278.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="248.0" style="-fx-background-color: #FED700;" text="View, update or export your records data" />
+   </children>
+</AnchorPane>

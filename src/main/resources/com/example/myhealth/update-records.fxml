@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.myhealth.controller.UpdateRecordsController">
+    <children>
+        <TableView fx:id="records" layoutX="362.0" layoutY="119.0" onMouseClicked="#rowClicked" prefHeight="331.0" prefWidth="591.0">
+            <columns>
+                <TableColumn fx:id="idCol" prefWidth="75.0" text="ID" />
+                <TableColumn fx:id="weightCol" prefWidth="75.0" text="Weight" />
+                <TableColumn fx:id="temperatureCol" prefWidth="97.0" text="Temperature" />
+            <TableColumn fx:id="bloodpressureCol" minWidth="2.0" prefWidth="101.0" text="Blood Pressure" />
+            <TableColumn fx:id="noteCol" minWidth="2.0" prefWidth="240.0" text="Note" />
+            </columns>
+        </TableView>
+        <VBox layoutX="30.0" layoutY="131.0" prefHeight="377.0" prefWidth="288.0" spacing="5.0">
+            <children>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="ID:" />
+                <TextField fx:id="inputId" disable="true" />
+                <Text layoutX="10.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Weight:" />
+                <TextField fx:id="weight" />
+                <Text layoutX="10.0" layoutY="265.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Temperature" />
+                <TextField fx:id="temperature" />
+            <Text layoutX="10.0" layoutY="210.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Blood Pressure" />
+            <TextField fx:id="bloodPressure" layoutX="10.0" layoutY="134.0" />
+            <Text layoutX="10.0" layoutY="126.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Note" />
+            <TextField fx:id="note" layoutX="10.0" layoutY="196.0" />
+                <Button alignment="CENTER" mnemonicParsing="false" onAction="#submit" prefHeight="25.0" prefWidth="160.0" text="Update" />
+            <Button fx:id="button_delete" mnemonicParsing="false" prefHeight="26.0" prefWidth="161.0" text="Delete" textFill="#ee0303" />
+            <Button fx:id="button_back" mnemonicParsing="false" prefHeight="26.0" prefWidth="159.0" text="Go Back" />
+            </children>
+        </VBox>
+      <Button fx:id="button_export" layoutX="629.0" layoutY="495.0" mnemonicParsing="false" text="Export records" />
+      <Label layoutX="318.0" layoutY="33.0" text="You can update, delete or export your records">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="18.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>

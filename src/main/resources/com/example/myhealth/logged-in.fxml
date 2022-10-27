@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="650.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.myhealth.controller.LoggedInController">
+   <children>
+      <Label fx:id="label_welcome" layoutX="356.0" layoutY="30.0" text="Welcome to your health!">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="button_records" layoutX="523.0" layoutY="323.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="166.0" style="-fx-background-color: #FED700; -fx-background-radius: 5;" text="Handle health records" />
+      <Button fx:id="button_personal" layoutX="260.0" layoutY="323.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="166.0" style="-fx-background-color: #FED700; -fx-background-radius: 5;" text="Update personal details" />
+      <Button fx:id="button_logout" layoutX="379.0" layoutY="384.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="166.0" style="-fx-background-color: #FED700; -fx-background-radius: 5;" text="Logout" />
+      <Label fx:id="label_welcome_record1" layoutX="357.0" layoutY="278.0" text="Here's what you can do:">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="18.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="87.0" fitWidth="136.0" layoutX="343.0" layoutY="74.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@human.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="label_fullname" contentDisplay="CENTER" layoutX="451.0" layoutY="102.0" style="-fx-background-color: #0000FF; -fx-padding: 5; -fx-background-radius: 5;" text="Firstname Lastname" textFill="#fed700">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="button_about" layoutX="424.0" layoutY="540.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="100.0" text="About" />
+   </children>
+</AnchorPane>
